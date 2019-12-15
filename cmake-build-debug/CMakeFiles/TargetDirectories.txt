@@ -1,0 +1,8 @@
+/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
+/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/src/CMakeFiles/rbtree_main.dir
+/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/tests/CMakeFiles/rebuild_cache.dir
+/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/tests/CMakeFiles/edit_cache.dir
+/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/tests/CMakeFiles/tests.dir

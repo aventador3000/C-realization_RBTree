@@ -159,95 +159,113 @@ void RBTree<Element, Compar>::insert(const Element& key)
 template <typename Element, typename Compar>
 const typename RBTree<Element, Compar>::Node* RBTree<Element, Compar>::find(const Element& key)
 {
-    // TODO: метод реализуют студенты
+    Node* templ= _root;
+    while (templ)
+    {
+        if (key < templ->_key)
+            templ = templ->_left;
+        else if (key > templ->_key)
+            templ = templ->_right;
+        else
+            return templ;
+    }
+    return nullptr;
 }
 
 template <typename Element, typename Compar >
 typename RBTree<Element, Compar>::Node* 
         RBTree<Element, Compar>::insertNewBstEl(const Element& key)
 {
-    // TODO: метод реализуют студенты
+    Node* insertKey = new Node(key); // Node to insert
+    Node* temp = _root; // Start traversing from root
+    Node* tempParent = nullptr; // Parent of temp (to remember previous node before NIL)
+    while (temp)
+    {
+        tempParent = temp;
+        if (insertKey->_key < temp->_key)
+            temp = temp->_left;
+        else if (insertKey->_key > temp->_key)
+            temp = temp->_right;
+        else
+            throw std::invalid_argument("Are equal ");
+    }
+    insertKey->_parent = tempParent;
+    if (!tempParent)
+        _root = insertKey;
+    else if (insertKey->_key < tempParent->_key)
+        tempParent->_left = insertKey;
+    else
+        tempParent->_right = insertKey;
+    insertKey->_color = RED;
+    return insertKey;
 }
-
 
 template <typename Element, typename Compar >
 typename RBTree<Element, Compar>::Node* 
     RBTree<Element, Compar>::rebalanceDUG(Node* nd)
 {
-    // TODO: этот метод студенты могут оставить и реализовать при декомпозиции балансировки дерева
-    // В методе оставлены некоторые важные комментарии/snippet-ы
 
-
-    // попадание в этот метод уже означает, что папа есть (а вот про дедушку пока не известно)
-    //...
-
-    Node* uncle = ...; // для левого случая нужен правый дядя и наоборот.
-
-    // если дядя такой же красный, как сам нод и его папа...
-    if (... uncle->isRed() ...)
-    {
-        // дядю и папу красим в черное
-        // а дедушку — в коммунистические цвета
-
-        // отладочное событие
-        if (_dumper)
-            _dumper->rbTreeEvent(IRBTreeDumper<Element, Compar>::DE_AFTER_RECOLOR1, this, nd);
-
-        // теперь чередование цветов "узел-папа-дедушка-дядя" — К-Ч-К-Ч, но надо разобраться, что там
-        // с дедушкой и его предками, поэтому продолжим с дедушкой
-        //..
-    }
-
-    // дядя черный
-    // смотрим, является ли узел "правильно-правым" у папочки
-    if (...)                                        // для левого случая нужен правый узел, поэтом отрицание
-    {                                               // CASE2 в действии
-
-        // ... при вращении будет вызвано отладочное событие 
-        // ...
-
-    }
-
-
-    // ...
-
-    // отладочное событие
-    if (_dumper)
-        _dumper->rbTreeEvent(IRBTreeDumper<Element, Compar>::DE_AFTER_RECOLOR3D, this, nd);
-
-
-    // деда в красный
-
-    // ...
-
-    // отладочное событие
-    if (_dumper)
-        _dumper->rbTreeEvent(IRBTreeDumper<Element, Compar>::DE_AFTER_RECOLOR3G, this, nd);
-
-    // ...
-
-
-    return nd;
 }
 
 
 template <typename Element, typename Compar >
 void RBTree<Element, Compar>::rebalance(Node* nd)
 {
-    // TODO: метод реализуют студенты
 
+    Node* y = nullptr;//дядя
     // ...
 
     // пока папа — цвета пионерского галстука, действуем
-    while (...)
-    {
-        // локальная перебалансировка семейства "папа, дядя, дедушка" и повторная проверка
-        ...
-    } 
+    while (nd->_parent && nd->_parent->_color == RED) {
+        if (nd->_parent->isLeftChild()){
+
+            y = nd->_parent->_parent->_right;
+            if (y && y->_color == RED){
+
+                nd->_parent->_color = BLACK;
+                y->_color = BLACK;
+                nd->_parent->_parent->_color = RED;
+                nd = nd->_parent->_parent;
+            }
+            else
+            {
+                if (nd->isRightChild()){
+
+                    nd = nd->_parent;
+                    rotLeft(nd);
+                }
+                nd->_parent->_color = BLACK;
+                nd->_parent->_parent->_color = RED;
+                rotRight(nd->_parent->_parent);
+            }
+        }
+        else if (nd->_parent->isRightChild())
+        {
+            y = nd->_parent->_parent->_left;
+            if (y && y->_color == RED){
+
+                y->_color = BLACK;
+                nd->_parent->_color = BLACK;
+                nd->_parent->_parent->_color = RED;
+                nd = nd->_parent->_parent;
+            }
+            else
+            {
+                if (nd->isLeftChild()){
+
+                    nd = nd->_parent;
+                    rotRight(nd);
+                }
+                nd->_parent->_color = BLACK;
+                nd->_parent->_parent->_color = RED;
+                rotLeft(nd->_parent->_parent);
+            }
+        }
+        }
+    _root->_color = BLACK;
+    }
 
 
-    // ...
-}
 
 
 
@@ -259,14 +277,20 @@ void RBTree<Element, Compar>::rotLeft(typename RBTree<Element, Compar>::Node* nd
     // правый потомок, который станет после левого поворота "выше"
     Node* y = nd->_right;
     
-    if (!y)
+    if (y == false)
         throw std::invalid_argument("Can't rotate left since the right child is nil");
-
+    if(nd->isLeftChild())
+        nd->_parent->setLeft(y);
+    else if (nd->isRightChild())
+        nd->_parent->setRight(y);
+    else
+        _root = y;
 
 
     // ...
 
-
+    nd->setRight(y->_left);
+    y->setLeft(nd);
     // отладочное событие
     if (_dumper)
         _dumper->rbTreeEvent(IRBTreeDumper<Element, Compar>::DE_AFTER_LROT, this, nd);
@@ -276,8 +300,18 @@ void RBTree<Element, Compar>::rotLeft(typename RBTree<Element, Compar>::Node* nd
 
 template <typename Element, typename Compar>
 void RBTree<Element, Compar>::rotRight(typename RBTree<Element, Compar>::Node* nd)
-{
-    // TODO: метод реализуют студенты
+{   Node* y = nd->_left;
+    if (y == false)
+        throw std::invalid_argument("Can't rotate right since the left child is nil");
+    if (nd->isLeftChild())
+        nd->_parent->setLeft(y);
+    else if (nd->isRightChild())
+        nd->_parent->setRight(y);
+    else
+        _root = y;
+
+    nd->setLeft(y->_right);
+    y->setRight(nd);
 
 
     // ...
