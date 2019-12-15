@@ -5,7 +5,6 @@ include_directories(.)
 add_executable(tests
         # tests
         def_dumper.h
-        individual.h
         rbtree_pub1_test.cpp
         rbtree_prv1_test.cpp
         # sources    

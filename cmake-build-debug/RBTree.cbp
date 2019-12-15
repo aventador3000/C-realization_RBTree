@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="RBTree"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rbtree_main">
+				<Option output="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/src/rbtree_main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 rbtree_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rbtree_main/fast">
+				<Option output="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/src/rbtree_main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 rbtree_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tests">
+				<Option output="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/tests/tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/tests/../src"/>
+					<Add directory="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/tests/."/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 tests"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tests/fast">
+				<Option output="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/tests/tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/tests/../src"/>
+					<Add directory="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/tests/."/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 tests/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/src/main.cpp">
+			<Option target="rbtree_main"/>
+		</Unit>
+		<Unit filename="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/src/rbtree.h">
+			<Option target="rbtree_main"/>
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/src/rbtree.hpp">
+			<Option target="rbtree_main"/>
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/tests/def_dumper.h">
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/tests/gtest/gtest-all.cc">
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/tests/gtest/gtest_main.cc">
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/tests/rbtree_prv1_test.cpp">
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/tests/rbtree_pub1_test.cpp">
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/Users/mac_vitaliy/Programming/C++/Projects/hw2_02_rbtree/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
